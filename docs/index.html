@@ -21,9 +21,18 @@
 		margin: 0px;
 	}
 
-	.bbcrm_loginBar{
+	#bbcrm_loginBar{
 		background-color: green;
 		height: 70px;
+		margin-top: -20px;
+		width: 100%;
+	}
+
+	#bbcrm-logged-in-bar{
+		background-color: green;
+		height: 70px;
+		margin-top: -20px;
+		width: 100%;
 	}
 	
 	.d-inline{
@@ -44,6 +53,11 @@
 		top: -40px;
 		left: 310px;
 	}
+
+	#email-loginbar{
+		top: 5.5px;
+    		position: relative;
+	}
 	
 	.btn{
 		padding: 10px 30px;
@@ -57,20 +71,23 @@
 	
 	.btn-primary{
 		position: relative;
-		left: 1000px;
-		top: -40px;
+		left: 1370px;
+    		top: -100px;
 	}
 	
 	#bbcrm-contact-button{
-		position: relative;
-		bottom: 20px;
-		left: 150px;
+		margin: 20px 100px 10px;
+    		float: left;
 	}
 
+	#contact-form{
+		float: left;
+		width: 350px;
+		background-color: green;
+	}
+	
     .form-horizontal{
         float: left;
-		margin: 100px;
-		background-color: green;
 		padding: 20px;
 		font-family: Georgia, serif;
     }
@@ -113,6 +130,12 @@
 </head>
 <body>
 
+<div id='header'>
+	<a class='headerItem' href='https://abrahamallenverticacrm.github.io/VerticaTest'></a>
+	<a class='headerItem' href='https://abrahamallenverticacrm.github.io/VerticaTest/search'></a>
+	<a class='headerItem' href='https://abrahamallenverticacrm.github.io/VerticaTest/data-room'></a>
+</div>
+	
 <bbcrm api_string="loginbar"> </bbcrm>
 
 <bbcrm api_string="contactform"> </bbcrm>
