@@ -132,7 +132,7 @@
 <script>
 let startup = setInterval(function(){
 	try{
-		console.log(document.getElementById('firstName'));
+		document.getElementById('firstName').style.color = 'black';
 		for(let x of document.getElementsByClassName('form-control')){if(x.type == 'select-one'){x.style.height = '50px'}};
 		clearInterval(startup);
 	}catch{
