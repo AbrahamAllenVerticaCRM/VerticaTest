@@ -86,7 +86,7 @@
 	}
 	
 	.d-inline{
-		float: left;
+		float: right;
 		margin: 0px;
 		padding: 20px;
 		list-style-type: none;
@@ -95,6 +95,10 @@
 	.theme-color2-lt{
 		color: white;
 		text-decoration: none;
+		font-size: 20px;
+    		font-weight: bold;
+    		line-height: 50px;
+    		text-align: center;
 	}
 	
 	#password-loginbar{
@@ -123,12 +127,26 @@
 	<a class='headerItem' href='https://abrahamallenverticacrm.github.io/VerticaTest/about'>About Us</a>
 	
 </div>
-<bbcrm api_string="loginbar"> </bbcrm>
+<bbcrm api_string="loginbar" template='demodataroom.html'> </bbcrm>
 <div id='main' style='position: absolute; top: 50px; padding: 50px;'>
 	
 
 <bbcrm api_string="dataroom"> </bbcrm>
 
 </div>
+<script>
+
+let startup = setInterval(function(){
+	try{for(let x = 0; x < 4; x++){
+    		document.getElementsByClassName('d-inline')[x].style.display = 'none';
+	}
+	clearInterval(startup);
+	}catch{
+		console.log('waiting');
+	}
+},200);
+
+</script>
+
 </body>
 </html>
