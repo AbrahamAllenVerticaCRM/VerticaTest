@@ -102,6 +102,15 @@
 		text-align: center;
 		text-decoration: none;
 	}
+
+	#bbcrm-nda{
+		height: 500px;
+    		overflow: auto;
+	}
+
+	#bbcrm-buyerregistration-showform{
+		display: none;
+	}
 </style>
 </head>
 <body>
@@ -122,7 +131,7 @@
 <script>
 let startup = setInterval(function(){
 	try{
-		document.getElementById('field_city');
+		document.getElementById('buyer-registration');
 		for(let x of document.getElementsByClassName('form-control')){if(x.type == 'select-one'){x.style.height = '50px'}};
 		clearInterval(startup);
 	}catch{
