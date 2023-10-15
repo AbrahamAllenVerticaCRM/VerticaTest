@@ -60,7 +60,7 @@
 	.btn:hover{
 		color: #674dfc;
 		background-color: white;
-		border-style: solid;
+		border-style: solid !important;
 		border-color: #674dfc;
 	}
 
@@ -193,6 +193,14 @@ let startup = setInterval(function(){
 	}
 },200);
 
+let setlinks = setInterval(function(){
+	try{
+		document.getElementsByClassName('btn-success')[0].href = 'https://abrahamallenverticacrm.github.io/VerticaTest/buyer-registration';
+	}catch{
+		console.log('waiting');
+	}
+},200)
+	
 </script>
 
 </body>
