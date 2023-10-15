@@ -100,19 +100,22 @@
     		line-height: 50px;
     		text-align: center;
 	}
-	
-	#password-loginbar{
-		position: relative;
-		top: -40px;
-		left: 310px;
+
+	.display-1{
+		color: #674dfc;
+    		font-size: 36px;
+    		font-weight: bold;
+    		text-align: center;
+    		text-decoration: none;
 	}
 
-	#email-loginbar{
-		top: 5.5px;
-    		position: relative;
+	.col-sm-12{
+		width: 45%;
+		float: left;
+		
 	}
 
-	#bbcrm-loginbar{
+	#bbcrm-loginbar, .checkbox, .bbcrm_login_forgotPwd{
 		display: none;
 	}
 </style>
@@ -128,7 +131,7 @@
 	
 </div>
 <bbcrm api_string="loginbar"> </bbcrm>
-<div id='main' style='position: absolute; top: 50px; padding: 50px;'>
+<div id='main' style='position: absolute; top: 50px; padding: 50px; width: 100%;'>
 	
 
 <bbcrm api_string="dataroom" template='demodataroom.html'> </bbcrm>
