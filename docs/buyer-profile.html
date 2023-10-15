@@ -87,8 +87,8 @@
 	}
 
 	.form-control{
-        	width: 300px;
-		height: 50px;
+        	width: 70%;
+    		height: 25px;
 		margin: 10px;
 		font-family: Georgia, serif;
 		border-width: 2px;
@@ -100,13 +100,13 @@
 
 	.form-group{
 		float: left;
-		width: 400px;
-    		height: 200px;
+		width: 50%;
+    		height: 150px;
 	}
 
 	.control-label{
 		color: #674dfc;
-		font-size: 30px;
+		font-size: 20px;
 		font-weight: bold;
 		text-align: center;
 		text-decoration: none;
@@ -129,6 +129,17 @@
 <bbcrm api_string="buyerprofileform"> </bbcrm>
 
 </div>
-  
+
+<script>
+	let startup = setInterval(function(){
+	try{
+		for(let x of document.getElementsByClassName('form-control')){if(x.type == 'select-one'){x.style.height = '50px'}};
+		clearInterval(startup);
+	}catch{
+		console.log('waiting');
+	}
+},200);
+	
+</script>
 </body>
 </html>
