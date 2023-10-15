@@ -14,10 +14,85 @@
 	<script src='//demoapi.verticacrm.com/bbcrm-assets/js-noconflict/bbcrm-listing.js'></script>
 	<script src='//demoapi.verticacrm.com/bbcrm-assets/js-noconflict/bbcrm-password-reset.js'></script>
 	<script src='//demoapi.verticacrm.com/bbcrm-assets/js-noconflict/bbcrm-search-tool.js'></script>
+
+	<style>
+	body{
+		margin: 0px;
+	}
+
+	
+
+	#header{
+		width: 100%;
+    		background-color: #674dfc;
+    		height: 50px;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		z-index: 5;
+	}
+	
+	.headerItem{
+        	float: left;
+		margin: auto;
+		width: 15%;
+        	color: white;
+		text-decoration: none;
+		font-size: 20px;
+    		font-weight: bold;
+    		line-height: 50px;
+    		text-align: center;
+   	}
+	
+	
+	
+	.btn{
+		padding: 10px 30px;
+		color: white;
+		background-color: #674dfc;
+		border-radius: 20px;
+		text-decoration: none;
+		border-style: solid;
+		margin: 20px;
+	}
+
+	.info{
+		padding: 20px;
+		border-radius: 20px;
+		float: left;
+		margin: 3%;
+		filter: drop-shadow(0px 0px 10px #674dfc);
+		background-color: white;
+	}
+	.title{
+		color: #674dfc;
+		font-size: 24px;
+		font-weight: bold;
+		text-align: center;
+		text-decoration: none;
+	}
+	.text{
+		color: black;
+		font-size: 20px;
+		text-decoration: none;
+	}
+</style>
 </head>
 <body>
+<div id='header'>
+	<a class='headerItem' href='https://abrahamallenverticacrm.github.io/VerticaTest'>Home</a>
+	<a class='headerItem' href='https://abrahamallenverticacrm.github.io/VerticaTest/search'>Listings</a>
+	<a class='headerItem' href='https://abrahamallenverticacrm.github.io/VerticaTest/data-room'>Data Room</a>
+	<a class='headerItem' href='mailto:info@verticacrm.com'>Email Us!</a>
+	<a class='headerItem' href='https://abrahamallenverticacrm.github.io/VerticaTest/selling'>Selling?</a>
+	<a class='headerItem' href='https://abrahamallenverticacrm.github.io/VerticaTest/about'>About Us</a>
+</div>
+<div id='main' style='position: absolute; top: 50px; padding: 50px;'>
 
 <bbcrm api_string="listing"> </bbcrm>
+
+</div>
   
 </body>
 </html>
+
