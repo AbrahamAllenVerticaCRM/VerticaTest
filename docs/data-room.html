@@ -5,7 +5,7 @@
 	<script src='//api3.verticacrm.com/bbcrm-assets/js-noconflict/galleria-1.4.2.min.js'></script>
 	<script src='//api3.verticacrm.com/bbcrm-assets/js-noconflict/galleria.classic.min.js'></script>
 	<script src='//api3.verticacrm.com/bbcrm-assets/js-noconflict/download-files.js'></script>
-	<script src='//api3.verticacrm.com/bbcrm-assets/js-noconflict/jsignature.js'></script>
+	<script src='//api3.verticacrm.com/bbcrm-assets/js-noconflict/jSignature.min.noconflict.js'></script>
 	<script src='//api3.verticacrm.com/bbcrm-assets/js-noconflict/bbcrm-constants.js'></script>
 	<script src='//api3.verticacrm.com/bbcrm-assets/js-noconflict/bbcrm-main.js'></script>
 	<script src='//api3.verticacrm.com/bbcrm-assets/js-noconflict/bbcrm-buyer-profile.js'></script>
@@ -182,27 +182,7 @@
 <bbcrm api_string="dataroom" template='demodataroom.html'> </bbcrm>
 
 </div>
-<script>
 
-let startup = setInterval(function(){
-	try{for(let x = 0; x < 4; x++){
-    		document.getElementsByClassName('d-inline')[x].style.display = 'none';
-	}
-	clearInterval(startup);
-	}catch{
-		console.log('waiting');
-	}
-},200);
-
-let setlinks = setInterval(function(){
-	try{
-		document.getElementsByClassName('btn-success')[0].href = 'https://abrahamallenverticacrm.github.io/VerticaTest/buyer-registration';
-	}catch{
-		console.log('waiting');
-	}
-},200)
-	
-</script>
 
 </body>
 </html>
